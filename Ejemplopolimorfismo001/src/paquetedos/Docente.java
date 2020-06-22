@@ -5,13 +5,14 @@
  */
 package paquetedos;
 
-public abstract class Docente {
+public  class Docente {
+//public abstract class Docente {
     private String nombre;
-    private double sueldo;
+    //private double sueldo;
     
-    public Docente(String n){
+    /*public Docente(String n){
         nombre = n;
-    }
+    }*/
     
     public void establecerDocente(String n){
         nombre = n;
@@ -21,7 +22,6 @@ public abstract class Docente {
         return nombre;
     }
     
-    public abstract void obtenerSueldo(double d){
-        sueldo = d;
-    }
+    //public abstract void obtenerSueldo(double d);
+    
 }

@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package paqueteuno;
 
+package paqueteuno;
+//la clase abstracta no deberia ir por q nohay metodos abstractos y por en ende no hay como utilizar en otras clases
 public abstract class Docente {
     private String nombre;
     
@@ -15,6 +11,7 @@ public abstract class Docente {
     public void establecerDocente(String n){
         nombre = n;
     }
+    public abstract void setapellido();
     
     public String obtenerDocente(){
         return nombre;

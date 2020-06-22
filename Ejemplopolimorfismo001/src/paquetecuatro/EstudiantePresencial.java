@@ -42,5 +42,15 @@ public class EstudiantePresencial extends Estudiante{
     public double obtenerCostoCredito(){
         return costoCredito;
     }
-    
+    public String toString(){
+        String cadenaFinal = String.format("%s", super.toString());
+        cadenaFinal = String.format("%s\n"
+                + "Costo de Crédito: %.2f\n"
+                + " Número de Créditos: %d\n",
+                cadenaFinal,
+                obtenerCostoCredito(),
+                obtenerNumeroCreditos());
+        
+        return cadenaFinal;
+    }
 }
